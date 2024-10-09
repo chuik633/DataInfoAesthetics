@@ -1,0 +1,15 @@
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.12/latin.css");
+
+/* Styles can go here */
+
+#clock-container{
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+}
+
+body{
+    background-color: #F1ECE5;
+}

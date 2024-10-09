@@ -1,0 +1,143 @@
+@import url("https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.12/latin.css");
+
+body {
+    font-family: sans-serif;
+    background: #F7F7F7;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+p {
+    padding: 0.5rem 0 1rem 0;
+    margin: 0;
+}
+
+a {
+    color: #666666;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+#tooltip{
+    position: absolute;
+    /* top: 100px; */
+    /* z-index: 3; */
+    background-color: #F5F1E7;
+    width: 150px;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: 'Courier New';
+}
+#tooltip div{
+    font-weight: normal;
+}
+
+.hidden{
+    display: none !important;
+    visibility: none !important;
+    z-index: -1;
+}
+.shown{
+    display: inherit;
+    visibility: true;
+    z-index: 3;
+}
+
+.axes *{
+    font-family: 'Courier New' !important;
+    /* font-size: 10px; */
+    font-size: 8px;
+}
+
+.side-x-axis {
+    font-family: 'Courier New' !important;
+    font-size: 9px;
+    /* font-weight: bold; */
+
+}
+
+.axes_title{
+    font-family: 'Courier New' !important;
+    position: absolute !important;
+    z-index: 10;
+   
+    /* background-color: black; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-content: center;
+
+}
+
+.side {
+    transform: rotate(-90deg); 
+/* background-color: red; */
+transform-origin: top left;
+font-size: 8px;
+}
+
+.title{
+    position: relative !important;
+    z-index: 10;
+    padding-left: 30px;
+   
+    /* background-color: pink; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    /* font-weight: bold; */
+    font-family: 'Courier New';
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+    justify-content: center;
+    text-align: center;
+
+}
+
+#sideplot{
+    position: absolute;
+    border: .5px solid black;
+    border-radius: 5px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#description{
+    font-size: 9px
+}
+
+#creds{
+    font-family: 'Courier New'; 
+    font-size: 8px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    width: 100px;
+
+    position:absolute;
+    top: 70px;
+    left: 680px;
+}
